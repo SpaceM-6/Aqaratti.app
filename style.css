@@ -1,10 +1,12 @@
 :root {
     --bayut-dark-blue: #08243c;
-    --bayut-green: #28b16d;
     --bayut-light-gray: #f7f9fa;
     --text-dark: #222222;
     --text-muted: #666666;
     --border-color: #d8dce0;
+    --primary-turquoise: #00c8b3;
+    --primary-turquoise-dark: #008072;
+    --primary-white: #ffffff;
 }
 
 * {
@@ -38,7 +40,7 @@ body {
 .navbar-bayut .logo {
     font-size: 24px;
     font-weight: bold;
-    color: var(--bayut-green);
+    color: var(--primary-turquoise);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -57,7 +59,7 @@ body {
 }
 
 .main-menu a:hover {
-    color: var(--bayut-green);
+    color: var(--primary-turquoise);
 }
 
 .nav-left {
@@ -83,13 +85,13 @@ body {
 
 /* القسم الرئيسي (الخلفية الزرقاء المتدرجة) */
 .hero-bayut {
-    background: linear-gradient(180deg, #0b3558 0%, var(--bayut-dark-blue) 100%);
+    background: linear-gradient(180deg, var(--primary-turquoise) 0%, var(--primary-turquoise-dark) 100%);
     padding: 60px 0 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: var(--primary-white);
 }
 
 .hero-container {
@@ -183,8 +185,8 @@ body {
 }
 
 .purpose-btn.active {
-    background: var(--bayut-green);
-    color: white;
+    background: var(--primary-turquoise);
+    color: var(--primary-white);
 }
 
 .location-input-wrapper {
@@ -211,8 +213,8 @@ body {
 }
 
 .bayut-search-btn {
-    background: var(--bayut-green);
-    color: white;
+    background: var(--primary-turquoise);
+    color: var(--primary-white);
     border: none;
     padding: 14px 45px;
     font-size: 16px;
@@ -247,8 +249,8 @@ body {
 }
 
 .status-btn.active {
-    color: var(--bayut-green);
-    border-bottom: 2px solid var(--bayut-green);
+    color: var(--primary-turquoise);
+    border-bottom: 2px solid var(--primary-turquoise);
 }
 
 .filter-dropdowns {
@@ -394,7 +396,7 @@ body {
     transition: 0.2s;
 }
 .thumb-img:hover, .thumb-img.active-thumb {
-    border-color: #28b16d; /* يظهر إطار أخضر حول الصورة النشطة */
+    border-color: var(--primary-turquoise); /* يظهر إطار فيروزي حول الصورة النشطة */
     opacity: 0.9;
 }
 /* تنسيقات واجهة الـ CRM المخصصة */
@@ -470,7 +472,7 @@ body {
 .badge-warm { background-color: #fef3c7; color: #d97706; }
 
 .btn-match {
-    background: #28b16d;
+    background: var(--primary-turquoise);
     color: white;
     border: none;
     padding: 6px 12px;
@@ -480,7 +482,7 @@ body {
     transition: 0.3s;
 }
 
-.btn-match:hover { background: #1e7e4c; }
+.btn-match:hover { background: var(--primary-turquoise-dark); }
 
 .status-select {
     padding: 6px 10px;
@@ -564,7 +566,7 @@ body {
 .badge-warm { background-color: #fef3c7; color: #d97706; }
 
 .btn-match {
-    background: #28b16d;
+    background: var(--primary-turquoise);
     color: white;
     border: none;
     padding: 6px 12px;
@@ -574,7 +576,7 @@ body {
     transition: 0.3s;
 }
 
-.btn-match:hover { background: #1e7e4c; }
+.btn-match:hover { background: var(--primary-turquoise-dark); }
 
 .status-select {
     padding: 6px 10px;
@@ -582,4 +584,11 @@ body {
     border: 1px solid #cbd5e1;
     outline: none;
     font-family: inherit;
+}
+
+.site-logo {
+    width: 34px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 8px;
 }
